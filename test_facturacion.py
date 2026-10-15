@@ -9,7 +9,7 @@ from facturacion import calcular_total_factura
 def test_calcular_total_factura_exitoso_con_mock():
     with patch("facturacion.obtener_tipo_cambio", return_value=3.80):
         resultado = calcular_total_factura(100.0, aplicar_descuento=False)
-        assert resultado == 999.00  # Error intencional
+        assert resultado == 380.00  # Error intencional
 
 
 def test_calcular_total_factura_con_descuento_mock():
